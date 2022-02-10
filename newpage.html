@@ -6,37 +6,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <h2>This is new page!!!</h2>
+<body class="w-3/4 mx-auto">
+    <header>
+        <h2 class="text-6xl text-center mt-12 mb-12">Let's get some <span class="text-sky-500">Money</span>!!!</h2>
+    </header>
     <main>
-        <div class="box">
-            <h2>Box 1</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, voluptatum voluptate animi sed magnam id
-                eaque quos fuga. Esse in dolorem laudantium porro!</p>
-        </div>
-        <div class="box">
-            <h2>Box 2</h2>
-            <p>Dolore vel minima reiciendis accusantium? Soluta quod sequi at, molestiae officiis praesentium error
-                debitis voluptatem minima nesciunt! Similique voluptas sapiente ullam totam optio!</p>
-        </div>
-        <div class="box">
-            <h2>Box 3</h2>
-            <p>Repellat, aliquid iusto? Fuga ullam totam exercitationem corrupti omnis at repudiandae id asperiores,
-                similique distinctio tempora nam ipsam nesciunt impedit dicta rem officia.</p>
-        </div>
-        <div class="box">
-            <h2>Box 4</h2>
-            <p>Tenetur atque id reprehenderit repudiandae unde dolores deserunt aliquam! Incidunt, autem quibusdam.
-                Obcaecati nobis, expedita perspiciatis a voluptatem sapiente possimus autem rem esse.</p>
-        </div>
-        <div class="box">
-            <h2>Box 5</h2>
-            <p>Id veritatis beatae eos aliquid assumenda autem repudiandae officiis cumque, impedit iusto quasi, tempora
-                eligendi quam illum saepe dolorum animi recusandae? Ipsam, quia.</p>
-        </div>
+        <!-- Blance and transaction -->
+        <section class="grid gap-4 grid-cols-3 text-white">
+            <div class="box bg-red-500 rounded-md p-8">
+                <h2>Deposit</h2>
+                <h3>$00</h3>
+            </div>
+            <div class="box bg-cyan-500	rounded-md p-8">
+                <h2>Withdraw</h2>
+                <h3>$00</h3>
+            </div>
+            <div class="box bg-indigo-300 rounded-md p-8">
+                <h2>Blance</h2>
+                <h3>$1100</h3>
+            </div>
+        </section>
+
     </main>
+
 </body>
 
 </html>

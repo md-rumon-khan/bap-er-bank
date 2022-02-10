@@ -10,28 +10,46 @@
 </head>
 
 <body class="w-3/4 mx-auto">
+
     <header>
         <h2 class="text-6xl text-center mt-12 mb-12">Let's get some <span class="text-sky-500">Money</span>!!!</h2>
     </header>
     <main>
+
         <!-- Blance and transaction -->
         <section class="grid gap-4 grid-cols-3 text-white">
-            <div class="box bg-red-500 rounded-md p-8">
-                <h2>Deposit</h2>
-                <h3>$00</h3>
+            <div class="bg-red-500 rounded-md p-8">
+                <h2 class="text-2xl">Deposit</h2>
+                <h3 class="text-4xl mt-2">$<span id="deposit-sum">00</span></h3>
             </div>
-            <div class="box bg-cyan-500	rounded-md p-8">
-                <h2>Withdraw</h2>
-                <h3>$00</h3>
+            <div class="bg-cyan-500	rounded-md p-8">
+                <h2 class="text-2xl">Withdraw</h2>
+                <h3 class="text-4xl mt-2">$<span id="withdraw-sum">00</span></h3>
             </div>
-            <div class="box bg-indigo-300 rounded-md p-8">
-                <h2>Blance</h2>
-                <h3>$1100</h3>
+            <div class="bg-indigo-300 rounded-md p-8">
+                <h2 class="text-2xl">Blance</h2>
+                <h3 class="text-4xl mt-2">$<span id="blance-sum">1100</span></h3>
             </div>
         </section>
 
+        <!-- Deposit and withdraw -->
+        <section class="mt-8 grid gap-4 grid-cols-2">
+            <div class="bg-cyan-300 rounded-md p-8">
+                <h2 class="text-2xl"> Please Deposit</h2>
+                <input placeholder="Enter you'r deposit amount" type="number" name="depositAmount" id="deposit-input"
+                    class="mt-2 p-2">
+                <button class="block py-4 px-8 rounded-md bg-yellow-100 mt-2" id="deposit-button">Deposit</button>
+            </div>
+            <div class="bg-teal-300 rounded-md p-8">
+                <h2 class="text-2xl"> Please Withdraw</h2>
+                <input placeholder="Enter you'r withdrow amount" type="number" name="depositAmount" id="withdraw-input"
+                    class="mt-2 p-2">
+                <button class="block py-4 px-8 rounded-md bg-yellow-100 mt-2" id="withdraw-button">Withdraw</button>
+            </div>
+        </section>
     </main>
 
+    <script src="js/banking.js"></script>
 </body>
 
 </html>
